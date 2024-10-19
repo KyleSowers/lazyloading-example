@@ -9,6 +9,10 @@ const routes: Routes = [
   {
     path: 'bonds',
     loadChildren: () => import('./bonds/bonds.module').then(m => m.BondsModule)
+  }, {
+    path: '',
+    redirectTo: '',
+    pathMatch: 'full'
   }
 ];
 
